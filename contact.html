@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dasaba & Sons Nigeria Limited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>DASABA & SONS</h2>
+                <span class="brand-subtitle">Nigeria Limited</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=600&fit=crop');">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>We're here to help with all your printing and branding needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    <p class="contact-intro">Reach out to us through any of the following channels. We're always happy to hear from you!</p>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Office Address</h3>
+                            <p>Suite A10 and C4 Murg Shopping Mall,<br>Opp. UTC Area 10, Garki,<br>Abuja, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:dasabaosighe@yahoo.com">dasabaosighe@yahoo.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p>
+                                <a href="tel:+2348055069149">+234 805 506 9149</a><br>
+                                <a href="tel:+2347039547042">+234 703 954 7042</a><br>
+                                <a href="tel:+2347033515653">+234 703 351 5653</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>
+                                Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                Saturday: 9:00 AM - 4:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🏢</div>
+                        <div>
+                            <h3>Registration</h3>
+                            <p>RC No: 859109</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p class="form-intro">Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name *</label>
+                                <input type="text" id="contactName" name="contactName" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required placeholder="+234 XXX XXX XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <select id="contactSubject" name="contactSubject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="printing">Printing Services Inquiry</option>
+                                    <option value="branding">Branding & Design</option>
+                                    <option value="hardware">Computer Hardware</option>
+                                    <option value="office">Office Accessories</option>
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactAttachment">Attach File (Optional)</label>
+                            <input type="file" id="contactAttachment" name="contactAttachment" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+                            <small>You can attach design files, reference materials, or any relevant documents</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" required>
+                                I agree to be contacted by Dasaba & Sons Nigeria Limited *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Find Us</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9441234567890!2d7.4898!3d9.0574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDMnMjYuNiJOIDfCsDI5JzIzLjMiRQ!5e0!3m2!1sen!2sng!4v1234567890" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-info">
+                    <h3>Visit Our Office</h3>
+                    <p><strong>Address:</strong> Suite A10 and C4 Murg Shopping Mall, Opposite UTC Area 10, Garki, Abuja, Nigeria</p>
+                    <p><strong>Landmark:</strong> Located opposite UTC in the heart of Garki, easily accessible from major roads in Abuja</p>
+                    <p><strong>Parking:</strong> Ample parking available at the shopping mall</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Quick Actions</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="quick-actions-grid">
+                <div class="quick-action-card">
+                    <div class="qa-icon">🖨️</div>
+                    <h3>Request a Quote</h3>
+                    <p>Get a customized quote for your printing project</p>
+                    <a href="services.html" class="btn btn-sm btn-primary">Get Quote</a>
+                </div>
+                <div class="quick-action-card">
+                    <div class="qa-icon">🛒</div>
+                    <h3>Browse Products</h3>
+                    <p>Explore our range of office and computer products</p>
+                    <a href="shop.html" class="btn btn-sm btn-primary">Shop Now</a>
+                </div>
+                <div class="quick-action-card">
+                    <div class="qa-icon">💼</div>
+                    <h3>Join Our Team</h3>
+                    <p>View current job openings and apply</p>
+                    <a href="careers.html" class="btn btn-sm btn-primary">View Jobs</a>
+                </div>
+                <div class="quick-action-card">
+                    <div class="qa-icon">ℹ️</div>
+                    <h3>Learn About Us</h3>
+                    <p>Discover our mission, vision and values</p>
+                    <a href="about.html" class="btn btn-sm btn-primary">About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What printing services do you offer?</h3>
+                    <p>We offer comprehensive printing services including large format printing, business cards, flyers, brochures, banners, posters, and customized print solutions for all your needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does it take to complete a printing project?</h3>
+                    <p>Project timelines vary depending on the complexity and quantity. Simple jobs can be completed within 24-48 hours, while larger projects may take 3-7 business days. We'll provide a specific timeline when you request a quote.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer bulk discounts?</h3>
+                    <p>Yes! We offer attractive discounts for bulk orders. Contact us with your requirements for a customized quote.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can you help with design services?</h3>
+                    <p>Absolutely! Our team includes experienced graphics designers who can help bring your vision to life or create designs from scratch.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What file formats do you accept?</h3>
+                    <p>We accept PDF, AI, PSD, JPG, PNG, and other common design file formats. For best results, we recommend high-resolution PDF files.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you deliver?</h3>
+                    <p>Yes, we offer delivery services within Abuja and can arrange shipping to other locations across Nigeria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Dasaba & Sons Nigeria Limited</h3>
+                    <p>Quality printing and premium products for your business and lifestyle.</p>
+                    <p class="footer-reg">RC No: 859109</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Printing Press</a></li>
+                        <li><a href="services.html">Office Accessories</a></li>
+                        <li><a href="services.html">Computer Hardware</a></li>
+                        <li><a href="services.html">General Contract</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 Suite A10 and C4 Murg Shopping Mall, Opp. UTC Area 10, Garki, Abuja</p>
+                    <p>📧 dasabaosighe@yahoo.com</p>
+                    <p>📱 +234 805 506 9149</p>
+                    <p>📱 +234 703 954 7042</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dasaba & Sons Nigeria Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

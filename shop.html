@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Our Products - Dasaba & Sons Nigeria Limited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>DASABA & SONS</h2>
+                <span class="brand-subtitle">Nigeria Limited</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&h=600&fit=crop');">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Quality products for your business and lifestyle needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="computers">Computer Hardware</button>
+                <button class="category-btn" data-category="office">Office Supplies</button>
+                <button class="category-btn" data-category="branding">Branded Merchandise</button>
+                <button class="category-btn" data-category="accessories">Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="shop-grid">
+                <!-- Computer Hardware -->
+                <div class="shop-product-card" data-category="computers">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>HP Elite Business Laptop</h3>
+                        <p>Core i5, 8GB RAM, 256GB SSD</p>
+                        <p class="shop-product-price">₦285,000</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('HP Elite Business Laptop', '285000')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="computers">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Dell Latitude Professional</h3>
+                        <p>Core i7, 16GB RAM, 512GB SSD</p>
+                        <p class="shop-product-price">₦425,000</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Dell Latitude Professional', '425000')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="computers">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Canon Office Printer</h3>
+                        <p>Multifunction Color Laser Printer</p>
+                        <p class="shop-product-price">₦125,000</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Canon Office Printer', '125000')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="computers">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Wireless Mouse & Keyboard</h3>
+                        <p>Premium ergonomic combo set</p>
+                        <p class="shop-product-price">₦15,500</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Wireless Mouse & Keyboard', '15500')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="computers">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>External Hard Drive 2TB</h3>
+                        <p>Portable USB 3.0 storage</p>
+                        <p class="shop-product-price">₦35,000</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('External Hard Drive 2TB', '35000')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Office Supplies -->
+                <div class="shop-product-card" data-category="office">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Office Stationery Set</h3>
+                        <p>Complete desk essentials bundle</p>
+                        <p class="shop-product-price">₦8,500</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Office Stationery Set', '8500')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="office">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Premium Notebooks (Pack of 10)</h3>
+                        <p>A4 ruled hardcover notebooks</p>
+                        <p class="shop-product-price">₦12,000</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Premium Notebooks', '12000')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="office">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>File Organizer System</h3>
+                        <p>Desktop filing and storage solution</p>
+                        <p class="shop-product-price">₦18,500</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('File Organizer System', '18500')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="office">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1609440208426-3a16f2e0d8ce?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Executive Pen Set</h3>
+                        <p>Premium business writing instruments</p>
+                        <p class="shop-product-price">₦6,500</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Executive Pen Set', '6500')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Branded Merchandise -->
+                <div class="shop-product-card" data-category="branding">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1572297794320-ea2ae46ccd95?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Custom Branded T-Shirts</h3>
+                        <p>Quality cotton with your logo (min. 50pcs)</p>
+                        <p class="shop-product-price">From ₦3,500/pc</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Custom Branded T-Shirts', '3500')">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="branding">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Branded Mugs</h3>
+                        <p>Ceramic mugs with custom printing</p>
+                        <p class="shop-product-price">From ₦2,200/pc</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Branded Mugs', '2200')">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="branding">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Corporate Caps</h3>
+                        <p>Embroidered company caps</p>
+                        <p class="shop-product-price">From ₦2,800/pc</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Corporate Caps', '2800')">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="branding">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>ID Card Lanyards</h3>
+                        <p>Custom printed branded lanyards</p>
+                        <p class="shop-product-price">From ₦800/pc</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('ID Card Lanyards', '800')">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="branding">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1600520611035-c19991c7cbf5?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Branded Tote Bags</h3>
+                        <p>Eco-friendly promotional bags</p>
+                        <p class="shop-product-price">From ₦1,500/pc</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Branded Tote Bags', '1500')">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="shop-product-card" data-category="accessories">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Desk Calendar 2024</h3>
+                        <p>Professional desk calendar</p>
+                        <p class="shop-product-price">₦3,500</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Desk Calendar 2024', '3500')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="accessories">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1619521338651-4dbf4548f93c?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Business Card Holder</h3>
+                        <p>Professional metal card case</p>
+                        <p class="shop-product-price">₦5,200</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Business Card Holder', '5200')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="accessories">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1596558450268-9c27524ba856?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Laptop Bag</h3>
+                        <p>Professional padded laptop case</p>
+                        <p class="shop-product-price">₦18,000</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Laptop Bag', '18000')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="shop-product-card" data-category="accessories">
+                    <div class="shop-product-image" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&h=500&fit=crop');"></div>
+                    <div class="shop-product-content">
+                        <h3>Wall Clock</h3>
+                        <p>Modern office wall clock</p>
+                        <p class="shop-product-price">₦8,500</p>
+                        <button class="btn btn-sm btn-primary" onclick="showProductDetail('Wall Clock', '8500')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductDetail()">&times;</span>
+            <div id="productDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Contact us for custom product requests and bulk orders</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Dasaba & Sons Nigeria Limited</h3>
+                    <p>Quality printing and premium products for your business and lifestyle.</p>
+                    <p class="footer-reg">RC No: 859109</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Printing Press</a></li>
+                        <li><a href="services.html">Office Accessories</a></li>
+                        <li><a href="services.html">Computer Hardware</a></li>
+                        <li><a href="services.html">General Contract</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 Suite A10 and C4 Murg Shopping Mall, Opp. UTC Area 10, Garki, Abuja</p>
+                    <p>📧 dasabaosighe@yahoo.com</p>
+                    <p>📱 +234 805 506 9149</p>
+                    <p>📱 +234 703 954 7042</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dasaba & Sons Nigeria Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
